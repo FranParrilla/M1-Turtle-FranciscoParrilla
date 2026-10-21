@@ -38,7 +38,7 @@ def draw_start_line() -> None:  # Función que dibuja la línea de salida.
     start = turtle.Turtle(visible=False)
     start.speed(0)
     start.pensize(2)
-    start.color("red")
+    start.color("green")
 
     extra_height = 40
     top_y = LANE_HEIGHT / 2 + extra_height
@@ -104,7 +104,7 @@ def main() -> None:  # Función principal que coordina toda la demostración.
     draw_finish_line()  # Marca la línea de llegada de la carrera.
 
     top_runner = create_runner("red", LANE_HEIGHT / 4)
-    bottom_runner = create_runner("blue", -LANE_HEIGHT / 4)
+    bottom_runner = create_runner("green", -LANE_HEIGHT / 4)
 
     screen.tracer(1)  # Vuelve a mostrar animación para las tortugas corredoras.
 
